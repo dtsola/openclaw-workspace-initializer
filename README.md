@@ -100,7 +100,9 @@ MIT — 随便用，署名可选。
 
 ## 小遥Claw
 
-我的 OpenClaw 发行版介绍页：<https://github.com/dtsola/xiaoyaoclaw-introduction>
+**小遥Claw，把 AI 助手装进自己的电脑。**
+
+介绍页：<https://github.com/dtsola/xiaoyaoclaw-introduction>
 
 ## 关于作者
 
