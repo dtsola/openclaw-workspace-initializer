@@ -116,3 +116,13 @@ MIT — 随便用，署名可选。
 - 📺 B站：<https://space.bilibili.com/736015>
 - 💻 GitHub：<https://github.com/dtsola>
 - 📕 小红书：<https://www.xiaohongshu.com/user/profile/5b4c0597e8ac2b06aa13346d>
+
+## 💬 加入交流群
+
+小遥全系产品用户交流群——产品反馈 · 使用交流 · 功能建议：
+
+<p align="center">
+  <img src="./assets/readme/community-qr.png" width="280" alt="小遥AI 用户交流群二维码：扫码加群，或添加微信 dtsola（备注：加群）">
+</p>
+
+<p align="center">扫码加群，或添加微信 <code>dtsola</code>（备注：<b>加群</b>）</p>
