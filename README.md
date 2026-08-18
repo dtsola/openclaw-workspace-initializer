@@ -21,7 +21,7 @@ OpenClaw agent 每次会话都是全新启动。没有工作区规范，你的 a
 clawhub install openclaw-workspace-initializer
 
 # 或从 GitHub 手动安装
-git clone https://github.com/<your-name>/openclaw-workspace-initializer
+git clone https://github.com/dtsola/openclaw-workspace-initializer
 # 把 SKILL.md 和 templates/ 放到你的 skills 目录
 ```
 
@@ -63,4 +63,20 @@ MIT — 随便用，署名可选。
 
 ---
 
-**需要定制？** OpenClaw 多 agent 部署 / 工作区规范化 / agent 记忆系统搭建，欢迎联系：[你的联系方式]
+## 🛠️ 需要定制？
+
+**Agent & Skills 定制，价格 ¥800 起。**
+
+- 微信：`dtsola`（添加好友时备注：**openclaw定制**）
+- 服务范围：OpenClaw 多 agent 部署 / 工作区规范化 / 自定义 Skill 开发 / agent 记忆系统搭建
+
+## 小遥Claw
+
+我的 OpenClaw 发行版介绍页：<https://github.com/dtsola/xiaoyaoclaw-introduction>
+
+## 关于作者
+
+- 🌐 博客：<https://www.dtsola.com>
+- 📺 B站：<https://space.bilibili.com/736015>
+- 💻 GitHub：<https://github.com/dtsola>
+- 📕 小红书：<https://www.xiaohongshu.com/user/profile/5b4c0597e8ac2b06aa13346d>
