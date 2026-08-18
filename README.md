@@ -19,14 +19,13 @@ OpenClaw agent 每次会话都是全新启动。没有工作区规范，你的 a
 ```bash
 # ClawHub（推荐）
 clawhub install xiaoyaoclaw-workspace-initializer
-```
-
-> 📌 **关于 ClawHub 命名**：ClawHub 平台保留 `openclaw-` 前缀命名空间（不可用作 slug），因此该技能在 ClawHub 上的 slug 为 `xiaoyaoclaw-workspace-initializer`。它与本仓库（openclaw-workspace-initializer）是同一个技能，内容完全一致。
 
 # 或从 GitHub 手动安装
 git clone https://github.com/dtsola/openclaw-workspace-initializer
 # 把 SKILL.md 和 templates/ 放到你的 skills 目录
 ```
+
+> 📌 **关于 ClawHub 命名**：ClawHub 平台保留 `openclaw-` 前缀命名空间（不可用作 slug），因此该技能在 ClawHub 上的 slug 为 `xiaoyaoclaw-workspace-initializer`。它与本仓库（openclaw-workspace-initializer）是同一个技能，内容完全一致。
 
 ## 使用
 
