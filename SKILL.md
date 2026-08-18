@@ -61,9 +61,17 @@ mkdir -p projects tasks outputs/knowledge scripts memory tmp
 >
 > **铁律 #3 — 配置修改安全：** 改配置一律用 `config.patch`（部分合并，只动指定字段）；**禁止使用 `config.apply`**（全量替换：会用旧配置快照整份写回，抹掉其他 agent 的修改）。多 agent 共享同一份 openclaw.json，apply = 谁后写谁赢。
 
-### Step 4.5: 将配置修改规范持久化到 AGENTS.md
+### Step 4.5: 将工作区规范持久化到 AGENTS.md
 
-若根目录存在 `AGENTS.md`，检查是否已包含「配置修改规范」；没有则追加 `templates/AGENTS-config-safety.md` 的内容（若 AGENTS.md 不存在则跳过，或随工作区模板一并创建）。
+若根目录存在 `AGENTS.md`，执行以下两项持久化（若 AGENTS.md 不存在则跳过，或随工作区模板一并创建）：
+
+**① 启动读取规则（必写）：** 确保 AGENTS.md 的「Session Startup」章节（若没有该章节则新建）的启动必读列表中包含：
+
+> `Read WORKSPACE.md` — workspace directory rules
+
+即：agent 每次会话启动时，先读取 `WORKSPACE.md`（目录规则），再开始干活。
+
+**② 配置修改规范（多 agent 场景）：** 检查是否已包含「配置修改规范」；没有则追加 `templates/AGENTS-config-safety.md` 的内容。
 
 ⚠️ **写入方式：** 必须用 Python 3 或文件编辑工具写入（UTF-8）；**不要用 PowerShell 5.1 内联脚本写中文**（按 GBK 解析无 BOM 的 UTF-8 脚本，中文会乱码）。
 
@@ -71,7 +79,7 @@ mkdir -p projects tasks outputs/knowledge scripts memory tmp
 
 在 `memory/` 下写入一条初始化记录（`memory/YYYY-MM-DD.md` 追加）：
 
-> workspace-initializer 技能已执行，标准目录结构和 WORKSPACE.md 已就位，配置修改规范已写入 AGENTS.md。
+> openclaw-workspace-initializer 技能已执行，标准目录结构和 WORKSPACE.md 已就位；AGENTS.md 已写入「Read WORKSPACE.md — workspace directory rules」启动规则及配置修改规范。
 
 ## 完整示例
 
