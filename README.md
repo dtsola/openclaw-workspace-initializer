@@ -34,6 +34,34 @@ git clone https://github.com/dtsola/openclaw-workspace-initializer
    - 检测多 agent 场景，把「config.patch ✅ / config.apply ❌」安全规范持久化进 `AGENTS.md`
    - 在 `memory/` 记录初始化日志
 
+## 🚀 快速上手（三步，10 分钟）
+
+以飞书 Bot 接入为例，三步让你的 agent 拥有一个规范的家：
+
+### Step 1：接入你的 agent
+
+新建一个智能体并接入（飞书 Bot / 微信 / Telegram 等均可），和它完成身份确认——起名字、确定称呼、划定职责范围：
+
+![Step 1 - 全新 agent 接入](assets/quickstart-step1-new-agent.png)
+
+### Step 2：一句话触发初始化
+
+对你的 agent 说：
+
+> 初始化你的工作目录，使用 openclaw-workspace-initializer
+
+agent 会自动完成：检测缺失目录 → 创建 `projects/ tasks/ outputs/ knowledge/ scripts/ memory/ tmp/` → 写入 `WORKSPACE.md` 规范 → 把「Read WORKSPACE.md」启动规则与配置安全规范写入 `AGENTS.md` → 记录初始化日志：
+
+![Step 2 - 执行初始化](assets/quickstart-step2-init-workspace.png)
+
+### Step 3：验收成果
+
+打开 agent 的工作区目录（Windows 资源管理器示例），标准结构已就位：
+
+![Step 3 - 初始化完成](assets/quickstart-step3-workspace-ready.png)
+
+> 💡 之后每次会话，agent 都会先读 `WORKSPACE.md` 再干活——目录不乱、记忆不丢、配置不打架。
+
 ## 与其他方案的区别
 
 | | openclaw-workspace-starter | **openclaw-workspace-initializer** |
