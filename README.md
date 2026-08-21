@@ -18,6 +18,13 @@ OpenClaw agent 每次会话都是全新启动。没有工作区规范，你的 a
 
 这个 skill 一次性解决：**目录结构 + 持久化规范 + 配置安全**。
 
+## 特性
+
+- 🗂️ 标准目录结构：`projects/` `tasks/` `outputs/` `knowledge/` `scripts/` `memory/` `tmp/`
+- 📜 WORKSPACE.md 持久化规范：重启后依然生效的目录管理规则
+- 🛡️ 多 agent 配置安全：只用 `config.patch`，禁止 `config.apply` 覆盖他人修改
+- ⚖️ **技能路径冲突仲裁**：其他技能若约定与 WORKSPACE.md 冲突的输出路径，一律以工作区规范为准，由执行 agent 完成路径翻译（如 `~/Downloads/research/<topic>` → `tasks/<topic>/`）——装再多技能也不乱
+
 ## 安装
 
 ```bash

@@ -54,6 +54,18 @@ mkdir -p projects tasks outputs/knowledge scripts memory tmp
 
 如果根目录没有 `WORKSPACE.md`，读取本 skill 的 `templates/WORKSPACE.md` 并写入根目录。
 
+## 路径冲突仲裁（技能输出目录冲突）
+
+用户可能安装任意技能，部分技能自带输出路径约定（如 `~/Downloads/xxx/`）。当技能约定与 WORKSPACE.md 目录规范冲突时：
+
+**仲裁规则（优先级从高到低）：**
+
+1. **WORKSPACE.md 是唯一路径权威** — 冲突时一律以工作区目录规范为准
+2. **执行智能体负责路径翻译** — 将技能约定的外部路径映射到工作区（如 `~/Downloads/research/<topic>` → `tasks/<topic>/`），不要求技能配合修改
+3. **汇报时注明差异** — 向用户汇报时说明「技能原约定 X，按工作区规范存到 Y」
+
+**设计原则：** 技能只负责「做什么」，路径归工作区管。自研技能不得硬编码工作目录，输出位置由 WORKSPACE.md 决定。
+
 ### Step 4: 引导新智能体
 
 完成目录创建和 WORKSPACE.md 写入后，明确告知当前智能体：
